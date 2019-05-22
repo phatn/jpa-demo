@@ -18,4 +18,10 @@ public class HomeController {
 		model.addAttribute("users", userRepository.findAll());
 		return "index";
 	}
+	
+	@GetMapping("/product")
+	public String product(Model model) {
+		model.addAttribute("users", userRepository.findAll());
+		return "index";
+	} 
 }
