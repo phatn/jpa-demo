@@ -27,6 +27,7 @@ public class HomeController {
 	
 	@GetMapping("/crazy")
 	public String crazy(Model model) {
+		System.out.println("Hello crazy!");
 		model.addAttribute("message", "Very crazy!");
 		return "index";
 	}
