@@ -24,4 +24,10 @@ public class HomeController {
 		model.addAttribute("users", userRepository.findAll());
 		return "index";
 	} 
+	
+	@GetMapping("/crazy")
+	public String crazy(Model model) {
+		model.addAttribute("message", "Very crazy!");
+		return "index";
+	}
 }
