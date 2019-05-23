@@ -28,6 +28,8 @@ public class HomeController {
 	@GetMapping("/crazy")
 	public String crazy(Model model) {
 		System.out.println("Hello crazy!");
+		// This is comment
+		int i = 1;
 		model.addAttribute("message", "Very crazy!");
 		return "index";
 	}
