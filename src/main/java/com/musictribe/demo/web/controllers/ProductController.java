@@ -11,6 +11,7 @@ public class ProductController {
 
 	@GetMapping
 	public String productDetail(Model model) {
+		System.out.println("Hello Phat");
 		model.addAttribute("msg", "Hello Phat");
 		return "product";
 	}
