@@ -39,3 +39,4 @@ buildNumber.properties
 
 # Annotation Processing
 .apt_generated
+/.idea/*
